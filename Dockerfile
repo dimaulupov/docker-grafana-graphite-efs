@@ -22,4 +22,4 @@ RUN ln -sf /efs/var-log-elasticsearch /var/log/elasticsearch
 
 ADD entrypoint.sh /entrypoint.sh
 
-CMD ['/entrypoint.sh']
+ENTRYPOINT ["/entrypoint.sh"]
