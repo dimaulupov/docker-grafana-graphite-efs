@@ -12,7 +12,7 @@ mount -t nfs4 -o nfsvers=4.1 $(curl -s http://169.254.169.254/latest/meta-data/p
 
 cd /efs
 
-for p in opt-graphite-storage-whisper var-lib-elasticsearch opt-grafana-data opt-graphite-storage-log var-log-elasticsearch ; do
+for p in opt-graphite-storage-whisper var-lib-elasticsearch opt-grafana-data opt-graphite-storage-log var-log ; do
     mkdir -p ${p}
     chmod 777 ${p}
 done

@@ -17,8 +17,8 @@ RUN ln -sf /efs/opt-grafana-data /opt/grafana/data
 RUN rm -rf /opt/graphite/storage/log
 RUN ln -sf /efs/opt-graphite-storage-log /opt/graphite/storage/log
 
-RUN rm -rf /var/log/elasticsearch
-RUN ln -sf /efs/var-log-elasticsearch /var/log/elasticsearch
+RUN rm -rf /var/log
+RUN ln -sf /efs/var-log /var/log
 
 ADD entrypoint.sh /entrypoint.sh
 
