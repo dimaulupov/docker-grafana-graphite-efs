@@ -2,7 +2,7 @@
 
 set -ex
 
-if [ "EFS_FS_ID" == "" ] ; then
+if [ "${EFS_FS_ID}" == "" ] ; then
     echo "Set EFS_FS_ID to efs files system id to use and run this container in privileged mode"
     exit 1
 fi
